@@ -1,5 +1,9 @@
+class Dog < ActiveRecord ::Base
+
+
 describe "Dog" do
   let(:teddy) { Dog.new(name: "Teddy", breed: "cockapoo") }
+
 
   before :each do
     db = ActiveRecord::Base.connection
@@ -71,4 +75,8 @@ describe "Dog" do
     end
   end
 
+ 
+
+
+end
 end
